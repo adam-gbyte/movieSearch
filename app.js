@@ -8,7 +8,7 @@ const port = process.env.port
 
 app.use(cors())
 app.use(express.json())
-app.use('/', MovieRouter)
+app.use('/api/movies', MovieRouter)
 
 app.listen(port, () => {
     console.log(`Server Run at http://localhost:${port}/api/movies`)
